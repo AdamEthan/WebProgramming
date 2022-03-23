@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head role="banner">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="style1.css">
+    <title>Adam Ethan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pStyle.css">
+    <style>
+
+    </style>
+  </head>
+  <main role="main">
+ <body data-gr-c-s-loaded="true">
+ <div class="wrapper">
+     <div class="a"> 
+            <header>
+            <h1>Adam Ethan</h1>
+            </header>
+            <nav>
+              <a href="../index.html"> Home</a>
+              <a href="../Assignment1.html">Asg 1</a>
+              <a href="../Assignment2/index.html">Asg 2</a>
+              <a href="../Assignment3/index.html">Asg 3</a>
+              <a href="index.html">Asg 4</a>
+              <a href="../Assignment5/index.html">Asg 5</a>
+              <a href="../Assignment6/index.html">Asg 6</a>
+              <a href="../contact.html">Contact</a>
+            </nav>
+      </div>
+
+    <div class="b">
+        <a name="intro"></a>
+        <h2>Movie Poster Store:</h2>
+        <p id="selectQ">Select the quantity of each item below.</p>
+      </div>
+    
+      <div class="d1">
+        <div id="item1">
+        <h4>Inception Poster</h4>
+        <p>Price $20</p>
+        Enter Quantity: 
+        <input type="number" name="Inception Poster" id="q1">
+        <img src="inception.jpg" id="img1" name=img1>
+        <p>Subtotal $: <input type=number id=price1 value=0 readonly></p>
+        </div>
+       </div>
+
+       <div class="d2">
+        <div id="item2">
+        <h4>Interstellar Poster</h4>
+        <p>Price $18</p>
+        Enter Quantity: 
+        <input type="number" name="Interstellar Poster" id="q2">
+        <img src="Interstellar.png" id="img2" name=img2>
+        <p>Subtotal $: <input type=number id=price2 value=0 readonly></p>
+       </div>
+       </div>
+
+       <div class="d3">
+        <div id="item3">
+        <h4>Tenet Poster</h4>
+        <p>Price $22</p>
+         Enter Quantity: 
+        <input type="number" name="Tenet Poster" id="q3">
+        <img src="tenet.PNG" id="img3" name=img3 >
+        <p>Subtotal $: <input type=number id=price3 value=0 readonly></p>
+        </div>
+       </div>
+
+       <div class="d4">
+         <h3>Total:</h3>
+         <div id="ship1">
+           Do you want to include cost of shipping ($9.99)?:
+          <br></br>
+          <input type="radio" id="yes" name="shipCheck" value="YES">
+          <label for="yes">Yes</label><br>
+          <input type="radio" id="no" name="shipCheck" value="NO">
+          <label for="no">No</label><br>
+         <p>Total $:<input type=number id=price4 value=0 readonly></p>
+        </div>
+        <div id="shipInfo">
+        <h3>Shipping Information:</h3>
+        <form action="#">
+          First name: <input type="text" name="firstName" ><br><br>
+          Last name: <input type="text" name="lastName" ><br><br>
+        
+          zip: <input type=number name=zip><p>
+          email: <input type=email name=email><p>
+        
+          Credit Card Number: <input type=number name=credit><p>
+                       
+        <input type="submit" value="Checkout">
+        <input type="reset" value="Reset">
+        </form> 
+        <p id="Receipt1"></p>
+        </div>
+        <br></br>
+       </div>
+
+   <div class="e">
+    <footer>
+      © 2021 Adam Ethan
+     </footer>
+      </div>
+  
+  <script type="text/javascript" src="asg4cart.js"></script>
+  </div>
+  </main>
+      </html>

@@ -1,0 +1,70 @@
+body {
+	background-image: url('aiPiece.jpg');
+	background-position: center bottom;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.mainContent {
+	width: 400px;
+	margin: auto;
+	margin-top: 100px;
+}
+
+video {
+	width: 100%;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+p {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 2.5vh;
+	text-align: center;
+	background-color: Gold;
+  text-shadow: black;
+}
+
+.nav {
+	font-family:  'Times New Roman', Times, serif;
+	font-size: 3vh;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.links, .selected {
+	margin-left: 0.5vh;
+	margin-right: 0.5vh;
+  background-color: black;
+}
+
+.header {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 4em;
+	text-align: center;
+	letter-spacing: 0.05em;
+	margin-top: 80px;
+	margin-bottom: 60px;
+}
+
+/*Link styles*/
+
+a:link, a:visited {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+a:focus, a:hover {
+	color: goldenrod;
+}
+
+a:active {
+	opacity: 0.5;
+}
+
+a.selected:link, a.selected:visited {
+	color: whitesmoke;
+}

@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+html {
+    scroll-behavior: smooth; 
+  }
+
+body{
+    font-family: 'Cinzel', serif;
+    background-color:white;
+    color:black; 
+}
+body, html{
+    height:100%;
+    padding:0;
+    margin:0;
+}
+
+article{
+    padding-left: 1em;
+    padding-right: 1em;
+    font-weight: 700;
+  }
+
+.a {grid-area:a;}
+.b {grid-area:b;}
+.d {grid-area:d;}
+.e {grid-area:e;}
+
+.wrapper{
+     display: grid;  
+     grid-template-columns: repeat(1fr);
+     grid-template-rows: auto 1fr auto; 
+     row-gap:1fr;
+     grid-template-areas: 
+       'a'
+       'b'
+       'd'
+       'e';
+  }
+
+   p{
+    font-size:calc(0.75em + 1vmin);
+   }
+   nav{
+       font-size:1.5vh;
+       display:flex;
+       justify-content:center;
+       color: black;
+       background-color:maroon;
+   }
+   
+   a{
+       /* font-family: Raleway, Helvetica, sans-serif; */
+       font-weight: bolder;
+       font-size: calc(0.75em + 1vmin);
+       line-height: 150%;
+       margin-left: 1vh;
+       margin-right: 1vh;
+       margin-top:3vh;
+   }
+
+   a:link{
+     color:gold
+   }
+   
+   a:hover{
+       color:whitesmoke;
+   }
+   a:active{
+       color:yellow;
+   }
+   a:visited{
+     color:goldenrod
+   }
+   
+   header{
+   display: flex;
+   flex-direction:row;
+   justify-content: center;
+   background: black;
+   color: whitesmoke; 
+   width: 100%;
+   height: 120px;
+   }
+
+   footer{
+   display: flex;
+   flex-direction:row;
+   justify-content: center;
+   background: grey;
+   color: whitesmoke; 
+   width: 100%;
+   bottom:0;
+   }
+
+  h1, h2{
+    flex: center;
+  }
+
+  h3{
+    text-decoration: underline; 
+  }
+
+img{
+ border:1px solid white;
+ max-width:92%;
+ height: auto; 
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#fLink{
+  margin-left: 0vh;
+  margin-right: 0vh;
+  margin-top: 0vh;
+  font-weight: 700 !important;
+  font-size: 1em !important;
+ }
+
+  @media(min-width: 600px){
+    .wrapper{
+        display: grid;  
+        grid-template-columns: repeat(5, 1fr);
+         grid-auto-rows: repeat(4, 1fr); 
+         row-gap:.5fr;
+         grid-template-areas: 
+           'a a a a a'
+           '. b b b .'
+           '. d d d .'
+           'e e e e e';
+      }
+
+      header{
+          display:flex;
+          justify-content: center;
+      }
+      
+      a{
+        font-weight: bolder;
+        font-size:  1.5em;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top:1em;
+        color: whitesmoke;
+    }
+       h1{
+        font-size:1.8em; 
+       }
+       p{
+        font-size:.9em;
+       }
+       img{
+         width:100%;
+       }
+    
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+}
